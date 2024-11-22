@@ -12,6 +12,6 @@ To complete this project I used Java Script - Modalar Java Script and Object Ori
 
 ## Deployment
 
-This project is deployed on GitHub Pages: 
+This project is deployed on GitHub Pages: https://github.com/Inzira117/se_project_todo-app.git
 
 
