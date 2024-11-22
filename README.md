@@ -1,17 +1,17 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+This is a simple To-Do application, which helps to track dayly tasks.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+Users can add new task by entering the title, set deadlines, remove tasks if they no longer needed and mark as done.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+To complete this project I used Java Script - Modalar Java Script and Object Oriented Programming. 
 
 ## Deployment
 
-This project is deployed on GitHub Pages:
+This project is deployed on GitHub Pages: 
 
-- ADD LINK HERE
+
