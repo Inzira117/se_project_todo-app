@@ -16,6 +16,10 @@ constructor({popupSelector, handleFormSubmit}) {
     return inputValues;
   }
 
+  getForm() {
+    return this._popupForm
+  }
+
    setEventListeners() {
     super.setEventListeners();
     this._popupForm.addEventListener("submit", (evt) => {
@@ -24,12 +28,6 @@ constructor({popupSelector, handleFormSubmit}) {
         this._handleFormSubmit(inputValues);
     });
    }
-
-
-   close() {
-    super.close();
-    this._popupForm.reset();
-  }
 }
 
 export default PopupWithForm;

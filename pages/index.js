@@ -14,16 +14,15 @@ const todosList = document.querySelector(".todos__list");
 
 const todoCounter = new TodoCounter(initialTodos, ".counter__text");
 
-
 function handleCheck(completed) {
   todoCounter.updateCompleted(completed);
 }
 
 function handleDelete(isCompleted) {
-  todoCounter.updateTotal(false); 
+  todoCounter.updateTotal(false);
 
   if (isCompleted) {
-    todoCounter.updateCompleted(false); 
+    todoCounter.updateCompleted(false);
   }
 }
 
@@ -37,14 +36,19 @@ const addTodoPopup = new PopupWithForm({
     const id = uuidv4();
 
     const values = { name, date, id };
-    const todo = generateTodo(values);
-    todosList.append(todo);
+    renderTodo(values);
     todoCounter.updateTotal(true);
 
+    
     newTodoValidator.resetValidation();
     addTodoPopup.close();
   },
 });
+
+const renderTodo = (item) => {
+  const todo = generateTodo(item);
+  section.addItem(todo);
+};
 
 addTodoPopup.setEventListeners();
 
@@ -58,8 +62,7 @@ const generateTodo = (data) => {
 const section = new Section({
   items: initialTodos,
   renderer: (item) => {
-    const todo = generateTodo(item);
-    section.addItem(todo);
+    renderTodo(item); 
   },
   containerSelector: ".todos__list",
 });
